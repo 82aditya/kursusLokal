@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="style.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
 <div style="background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
@@ -43,10 +44,38 @@
           <h5 class="card-title">Dasar Memasak</h5>
           <p class="card-text small mb-1">Pengajar: Tiara</p>
           <p class="card-text small text-muted">Lokasi: Telanai</p>
+          <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#courseModal">
+            Lihat Detail
+          </button>
         </div>
         <img src="https://bisnisukm.com/uploads/2010/02/kursus-memasak.jpg" class="img-fluid" style="width: 100px; object-fit: cover;" alt="Memasak">
       </div>
     </div>
+<div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="courseModalLabel">Detail Kursus: Cybersecurity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deskripsi:</strong> Kursus ini membahas cara mengelola risiko keamanan siber dan mengurangi kerentanan sistem.</p>
+        <ul>
+          <li>Durasi: 8 minggu</li>
+          <li>Waktu belajar: 8–11 jam/minggu</li>
+          <li>Dimulai: 2 Juli 2025</li>
+          <li>Daftar terakhir: 7 Juli 2025</li>
+          <li>Model: Instructor-paced</li>
+        </ul>
+        <p>Anda akan mendapatkan sertifikat setelah menyelesaikan kursus ini.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="#" class="btn btn-success">Daftar Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="col-md-4">
       <div class="card flex-row">
@@ -74,5 +103,6 @@
 </div>
 
 </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
