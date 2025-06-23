@@ -19,4 +19,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 300px;
+  padding: 60px 0;
 }
